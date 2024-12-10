@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Hello World! </h1>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+  </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Movie Hub</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#movies">Movies</a></li>
+        <li><a href="#add-movie">Add Movie</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="banner">
+    <h1>Welcome to Movie Hub</h1>
+    <p>Your one-stop destination for publishing and discovering movies!</p>
+  </section>
+
+  <section id="movies" class="movie-section">
+    <h2>Latest Movies</h2>
+    <div class="movie-grid">
+      <div class="movie-card">
+        <img src="https://via.placeholder.com/200x300" alt="Movie Poster">
+        <h3>Movie Title</h3>
+        <p>Genre: Action</p>
+        <p>Year: 2024</p>
+      </div>
+      <div class="movie-card">
+        <img src="https://via.placeholder.com/200x300" alt="Movie Poster">
+        <h3>Another Movie</h3>
+        <p>Genre: Drama</p>
+        <p>Year: 2023</p>
+      </div>
+      <!-- Add more movie cards as needed -->
+    </div>
+  </section>
+
+  <section id="add-movie" class="form-section">
+    <h2>Publish a Movie</h2>
+    <form>
+      <div class="input-group">
+        <label for="title">Movie Title</label>
+        <input type="text" id="title" placeholder="Enter movie title" required>
+      </div>
+      <div class="input-group">
+        <label for="genre">Genre</label>
+        <input type="text" id="genre" placeholder="Enter movie genre" required>
+      </div>
+      <div class="input-group">
+        <label for="year">Year</label>
+        <input type="number" id="year" placeholder="Enter release year" required>
+      </div>
+      <div class="input-group">
+        <label for="poster">Poster URL</label>
+        <input type="url" id="poster" placeholder="Enter movie poster URL" required>
+      </div>
+      <button type="submit">Publish</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 Movie Hub. All rights reserved.</p>
+  </footer>
+</body>
+</html>
